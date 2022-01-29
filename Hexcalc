@@ -1,0 +1,27 @@
+
+
+
+#poligon triangle
+print('PROGRAM TO CALCULATE THE NUMBER OF DOTS IN A TRIANGLE/HEX GIVEN DOTS IN ONE SIDE')
+while True:
+   
+    side = int(input('How many sides do you want?>>> '))
+    a = 0
+    area = 0
+    hexo = 0
+
+
+    def points():
+        global a
+        global area
+        for i in range(side):
+            a = side - i
+            #print(a)
+            area = area + a
+           
+           
+
+    points()
+    hexo = ((area - side) *6) + 1
+    print(f'Total dots for TRIANGLE of side {side} =',area)
+    print(f'Total dots for HEX of side {side} =', hexo )
